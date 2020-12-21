@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RandomQuote</string>
+
+
+    <!-- LoadingDialog!-->
+    <string name="dialog_loading_please_wait">please Wait</string>
+
+
+    <!-- QuoteActivity!-->
+    <string name="activity_quote_title">please Wait</string>
+    <string name="activity_quote_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="activity_quote_by">~ By</string>
+    <string name="activity_quote_tv_source">Data Source</string>
+
+    <string name="activity_quote_temp">xyz</string>
+
+    <string name="activity_nothing_to_display">Nothing to display</string>
+
+
+    <string name="activity_quote_btn_fetch_quote">Fetch New Quote</string>
+
+</resources>

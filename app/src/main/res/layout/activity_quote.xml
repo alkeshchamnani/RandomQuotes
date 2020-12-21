@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layoutBackgroundColor2">
+
+        <RelativeLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_corner_rounded"
+            android:padding="@dimen/dimen_20">
+
+            <ImageView
+                android:id="@+id/ivHeaderIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dimen_10"
+                android:src="@drawable/ic_quote" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivHeaderIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_70"
+                android:gravity="center"
+                android:text="@string/activity_quote_description"
+                android:textColor="@color/textViewColor2"
+                android:textSize="@dimen/heading2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llHeader"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="-70dp"
+            android:layout_marginEnd="@dimen/dimen_30"
+            android:background="@drawable/box_white_rounded_corners"
+            android:paddingStart="@dimen/dimen_20"
+            android:paddingTop="@dimen/dimen_10"
+            android:paddingEnd="@dimen/dimen_20"
+            android:paddingBottom="@dimen/dimen_50">
+
+            <TextView
+                android:id="@+id/lableDataSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_quote_tv_source"
+                android:textColor="@color/textViewColor1"
+                android:textSize="@dimen/heading1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDataSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5"
+                android:layout_toEndOf="@+id/lableDataSource"
+                android:textColor="@color/textViewColor5"
+                android:textSize="@dimen/heading1" />
+
+            <TextView
+                android:id="@+id/tvQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDataSource"
+                android:layout_marginTop="@dimen/dimen_50"
+                android:gravity="center"
+
+
+                android:text="@string/activity_nothing_to_display"
+                android:textColor="@color/textViewColor3"
+                android:textSize="@dimen/heading2"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQuote"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginEnd="@dimen/dimen_5"
+                android:layout_toStartOf="@+id/tvAuthor"
+                android:text="@string/activity_quote_by"
+                android:textColor="@color/textViewColor5"
+                android:textSize="@dimen/heading1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQuote"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/activity_quote_temp"
+                android:textColor="@color/textViewColor8"
+                android:textSize="@dimen/heading1" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnFetchNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llDetail"
+            android:layout_marginStart="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="@dimen/dimen_30"
+            android:background="@color/colorAccent"
+            android:text="@string/activity_quote_btn_fetch_quote"
+            android:textColor="@color/textViewColor2" />
+
+    </RelativeLayout>
+</ScrollView>
